@@ -21,45 +21,7 @@ ChartJS.register(
   Legend
 );
 
-export const nineteen_eighteen = {
-  labels: ['danceability','energy','liveness','speechiness','acousticness'],
-  datasets: [
-    {
-      label: 'score',
-      data: [0.62, 0.7, 0.16, 0.7, 0.14],
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgba(255, 99, 132, 1)',
-      borderWidth: 1,
-    },
-  ],
-};
-
-export const evermore = {
-  labels: ['danceability','energy','liveness','speechiness','acousticness'],
-  datasets: [
-    {
-      label: '# of Votes',
-      data: [0.53, 0.49, 0.11, 0.06, 0.79],
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgba(255, 99, 132, 1)',
-      borderWidth: 1,
-    },
-  ],
-};
-
-const album_data = {
-  labels: ['danceability','energy','liveness','speechiness','acousticness'],
-  datasets: [
-    {
-      label: '# of Votes',
-      data: [data_json[0]["danceability"], data_json[0]["energy"], data_json[0]["liveness"], data_json[0]["speechiness"], data_json[0]["acousticness"]],
-      backgroundColor: 'rgba(255, 99, 132, 0.2)',
-      borderColor: 'rgba(255, 99, 132, 1)',
-      borderWidth: 1,
-    },
-  ],
-};
-
+// 'rgba(255, 99, 132, 1)'
 const all_albums_vis = data_json.map((album, index)=>{
   const album_data = {
     labels: ['danceability','energy','liveness','speechiness','acousticness'],
@@ -68,7 +30,7 @@ const all_albums_vis = data_json.map((album, index)=>{
         label: '# of Votes',
         data: [album["danceability"], album["energy"], album["liveness"], album["speechiness"], album["acousticness"]],
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
-        borderColor: 'rgba(255, 99, 132, 1)',
+        borderColor: '#8a5066',
         borderWidth: 1,
       },
     ],
@@ -80,6 +42,7 @@ const all_albums_vis = data_json.map((album, index)=>{
     id="chart"
     options={{ maintainAspectRatio: false }}
     />
+    <br />
     </div>
   )
 })
@@ -98,21 +61,3 @@ export default function App() {
     </div>
   );
 }
-
-
-// <h3> 1989 </h3>
-// <div class="chart-container-aa">
-// <Radar data={nineteen_eighteen}
-// id="chart"
-// height="400px"
-// options={{ maintainAspectRatio: false }} />
-// </div>
-// </div>
-// <div>
-// <h3> evermore </h3>
-// <div class="chart-container-bb">
-// <Radar data={evermore}
-// id="chart"
-// height="400px"
-// options={{ maintainAspectRatio: false }} />
-// </div>

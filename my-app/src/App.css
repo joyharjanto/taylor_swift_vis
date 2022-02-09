@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #faecbe;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #cc6b96;
 }
 
 .App-link {
@@ -40,4 +40,10 @@
 .chart-wrapper {
   height: 300px;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+h3{
+  color: '#8a5066';
 }
