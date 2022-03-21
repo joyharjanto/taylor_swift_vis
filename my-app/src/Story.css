@@ -1,0 +1,93 @@
+.step-container {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(208, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 3px 1px;
+  /* background: white; */
+  margin: 50vh auto;
+  padding: 24px;
+  color: #cc6b96;
+  background-color: #faecbe;
+
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+.step-counter {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+
+.skinny {
+  width: 50%;
+}
+
+.image {
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(208, 204, 204);
+  box-shadow: rgba(0, 0, 0, 0.11) 0px 3px 3px 1px;
+  width: 100%;
+}
+
+.scroller {
+  flex-basis: 40%;
+}
+
+.half-graphic {
+  flex-basis: 60%;
+  position: sticky;
+  top: 20px;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.full-graphic {
+  width: 60%;
+  position: sticky;
+  top: 20px;
+  z-index: -1;
+}
+
+.stick-middle {
+  top: 30vh;
+}
+
+.section {
+  display: flex;
+  margin: 50px 20px 0 20px;
+}
+
+.column {
+  flex-direction: column;
+  align-items: center;
+}
+
+.conclusion-header {
+  margin-top: 50vh;
+  position: sticky;
+  top: 30vh;
+}
+
+.chart-wrapper {
+  height: 300px;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+.App-header {
+  background-color: #faecbe;
+  /* min-height: 10vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #cc6b96;
+}
