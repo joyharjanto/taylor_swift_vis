@@ -84,6 +84,7 @@ const Story = () => {
         </Scrollama>
         </div>
         <div className="half-graphic">
+         
           // <img src="https://media.giphy.com/media/1mYA57VOSC7C0/giphy.gif" />
         </div>
       </div>
