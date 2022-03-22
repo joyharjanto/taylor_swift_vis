@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
 import data_json from "./raw_data";
 import "./Story.css";
-import PlaySound from "./sound";
 
 import {
   Chart as ChartJS,
@@ -43,20 +42,20 @@ const Story = () => {
       ],
     };
     return(
-      <div class="chart-wrapper">
+      <div className="chart-wrapper">
         <Radar data={album_data}
         id="chart"
         options={{ maintainAspectRatio: false }}
         />
+        {console.log(album_data)}
         <br />
       </div>
     )
   })
   return (
     <>
-      <PlaySound />
       <header className="App-header">
-       <h2> An Overview of Taylor Swift's Albums </h2>
+       <h2> An Overview of Taylor Swift's Albums !!</h2>
        <div> <a href ="https://twitter.com/JoyHarjanto">by: Joy Harjanto </a></div>
 
       </header>
@@ -223,7 +222,7 @@ const Story = () => {
         width="480"
         height="232"
         frameBorder="0"
-        class="giphy-embed"
+        className="giphy-embed"
         allowFullScreen/>
         </div>
       </div>

@@ -1,6 +1,6 @@
 *{
   font-family: 'Space Mono', monospace;
-  background-color: #faf5e6;
+  /* background-color: #faf5e6; */
 }
 
 .step-container {
@@ -99,5 +99,5 @@
 
 .end-text{
   align-items: center;
-  
+
 }
