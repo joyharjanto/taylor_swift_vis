@@ -84,7 +84,7 @@ const Story = () => {
         </Scrollama>
         </div>
         <div className="half-graphic">
-          <img src="https://media.giphy.com/media/1mYA57VOSC7C0/giphy.gif" />
+          // <img src="https://media.giphy.com/media/1mYA57VOSC7C0/giphy.gif" />
         </div>
       </div>
       <div className="section column evermore">
@@ -120,7 +120,7 @@ const Story = () => {
       </div>
       <div className="section fearlesspt2">
       <div className="half-graphic">
-      <img src ="https://media.giphy.com/media/3o6gg2VslsUCY1rcLS/giphy.gif"/>
+      // <img src ="https://media.giphy.com/media/3o6gg2VslsUCY1rcLS/giphy.gif"/>
       </div>
         <div className="scroller">
         <Scrollama onStepEnter={onStepEnter}>
@@ -165,7 +165,7 @@ const Story = () => {
       </div>
       <div className="section loverpt2">
       <div className="half-graphic">
-        <img src ="https://media.giphy.com/media/dAcePXakSsiRzvdUEf/giphy.gif"/>
+        // <img src ="https://media.giphy.com/media/dAcePXakSsiRzvdUEf/giphy.gif"/>
       </div>
         <div className="scroller">
         <Scrollama onStepEnter={onStepEnter}>
@@ -218,12 +218,12 @@ const Story = () => {
         </Scrollama>
         </div>
         <div className="half-graphic">
-        <iframe src="https://giphy.com/embed/LP5FLyAK0pr43qMSuH"
-        width="480"
-        height="232"
-        frameBorder="0"
-        className="giphy-embed"
-        allowFullScreen/>
+        // <iframe src="https://giphy.com/embed/LP5FLyAK0pr43qMSuH"
+        // width="480"
+        // height="232"
+        // frameBorder="0"
+        // className="giphy-embed"
+        // allowFullScreen/>
         </div>
       </div>
       <div className="section column TaylorSwift">
