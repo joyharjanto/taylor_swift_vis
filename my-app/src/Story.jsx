@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Scrollama, Step } from "react-scrollama";
 import data_json from "./raw_data";
 import "./Story.css";
+import PlaySound from "./sound";
+
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -12,7 +14,6 @@ import {
   Legend,
 } from 'chart.js';
 import { Radar } from 'react-chartjs-2';
-
 ChartJS.register(
   RadialLinearScale,
   PointElement,
@@ -51,11 +52,13 @@ const Story = () => {
       </div>
     )
   })
-  // <h3> {album["album"]}</h3>
   return (
     <>
+      <PlaySound />
       <header className="App-header">
-       Taylor Swift Data Viz
+       <h2> An Overview of Taylor Swift's Albums </h2>
+       <div> <a href ="https://twitter.com/JoyHarjanto">by: Joy Harjanto </a></div>
+
       </header>
       <div className="section column 1989">
         <div className="full-graphic stick-middle">
@@ -64,17 +67,26 @@ const Story = () => {
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={0} key={0}>
             <div className="step-container skinny">
-              <b>1989</b>
-            </div>
-          </Step>
-          <Step data={1} key={1}>
-            <div className="step-container skinny">
-            red lips and rosy cheeks
-            say you'll see me again
-            even if it's just pretend
+              1989
             </div>
           </Step>
         </Scrollama>
+      </div>
+      <div className="section 1989pt2">
+        <div className="scroller">
+        <Scrollama onStepEnter={onStepEnter}>
+        <Step data={2} key={2}>
+          <div className="step-container">
+            red lips and rosy cheeks
+            say you'll see me again
+            even if it's just in your wildest dreams
+          </div>
+        </Step>
+        </Scrollama>
+        </div>
+        <div className="half-graphic">
+          <img src="https://media.giphy.com/media/1mYA57VOSC7C0/giphy.gif" />
+        </div>
       </div>
       <div className="section column evermore">
         <div className="full-graphic stick-middle">
@@ -83,7 +95,7 @@ const Story = () => {
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={2} key={2}>
             <div className="step-container skinny">
-              <b> evermore </b>
+              evermore
             </div>
           </Step>
           <Step data={3} key={3}>
@@ -104,13 +116,23 @@ const Story = () => {
               Fearless (Taylor's Version)
             </div>
           </Step>
-          <Step data={5} key={5}>
-            <div className="step-container skinny">
-              you take my hand and drag me head first
-              Fearless
-            </div>
-          </Step>
+
         </Scrollama>
+      </div>
+      <div className="section fearlesspt2">
+      <div className="half-graphic">
+      <img src ="https://media.giphy.com/media/3o6gg2VslsUCY1rcLS/giphy.gif"/>
+      </div>
+        <div className="scroller">
+        <Scrollama onStepEnter={onStepEnter}>
+        <Step data={5} key={5}>
+          <div className="step-container">
+          you take my hand and drag me head first
+          fearless
+          </div>
+        </Step>
+        </Scrollama>
+        </div>
       </div>
       <div className="section column folklore">
         <div className="full-graphic stick-middle">
@@ -137,15 +159,24 @@ const Story = () => {
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={8} key={8}>
             <div className="step-container skinny">
-              <b> Lover </b>
-            </div>
-          </Step>
-          <Step data={9} key={9}>
-            <div className="step-container skinny">
-              I don't wanna think of anything else now that I thought of you
+              Lover
             </div>
           </Step>
         </Scrollama>
+      </div>
+      <div className="section loverpt2">
+      <div className="half-graphic">
+        <img src ="https://media.giphy.com/media/dAcePXakSsiRzvdUEf/giphy.gif"/>
+      </div>
+        <div className="scroller">
+        <Scrollama onStepEnter={onStepEnter}>
+        <Step data={9} key={9}>
+          <div className="step-container">
+          I don't wanna think of anything else now that I thought of you
+          </div>
+        </Step>
+        </Scrollama>
+        </div>
       </div>
       <div className="section column red">
         <div className="full-graphic stick-middle">
@@ -154,7 +185,7 @@ const Story = () => {
         <Scrollama onStepEnter={onStepEnter}>
           <Step data={10} key={10}>
             <div className="step-container skinny">
-              <b> Red </b>
+              Red
             </div>
           </Step>
           <Step data={11} key={11}>
@@ -174,13 +205,27 @@ const Story = () => {
               reputation
             </div>
           </Step>
-          <Step data={13} key={13}>
-            <div className="step-container skinny">
-              Is it chill that you're in my head?
-              'Cause I know that it's delicate
-            </div>
-          </Step>
         </Scrollama>
+      </div>
+      <div className="section reputation2">
+        <div className="scroller">
+        <Scrollama onStepEnter={onStepEnter}>
+        <Step data={13} key={13}>
+          <div className="step-container">
+          Is it chill that you're in my head?
+          'Cause I know that it's delicate
+        </div>
+        </Step>
+        </Scrollama>
+        </div>
+        <div className="half-graphic">
+        <iframe src="https://giphy.com/embed/LP5FLyAK0pr43qMSuH"
+        width="480"
+        height="232"
+        frameBorder="0"
+        class="giphy-embed"
+        allowFullScreen/>
+        </div>
       </div>
       <div className="section column TaylorSwift">
         <div className="full-graphic stick-middle">
@@ -199,6 +244,15 @@ const Story = () => {
             </div>
           </Step>
         </Scrollama>
+      </div>
+      <div className="App-header">
+      <div className="end-text">
+        How I made this:
+        I used R + React + chartJS + scrollama. This is my first time using all three tools :D
+        inspired by this <a href ="https://mmcghee18.github.io/harry-potter-spells/">project </a>.
+        Dataset is from  <a href ="https://taylor.wjakethompson.com/"> here</a>.
+        also made possible by my lovely boyfriend who forced me to stop procrastinating and finish this in one sitting. ily hehe
+      </div>
       </div>
     </>
   );

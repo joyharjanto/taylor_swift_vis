@@ -1,3 +1,8 @@
+*{
+  font-family: 'Space Mono', monospace;
+  background-color: #faf5e6;
+}
+
 .step-container {
   border-radius: 5px;
   border-width: 1px;
@@ -90,4 +95,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #cc6b96;
+}
+
+.end-text{
+  align-items: center;
+  
 }

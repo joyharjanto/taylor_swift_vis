@@ -12,7 +12,9 @@
     "react-chartjs-2": "^4.0.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^5.0.0",
-    "react-scrollama": "^2.2.8"
+    "react-scrollama": "^2.2.8",
+    "react-song-embed": "^1.0.0",
+    "react-sound": "^1.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

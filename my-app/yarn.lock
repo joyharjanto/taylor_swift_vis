@@ -7274,7 +7274,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.6.2", "prop-types@^15.8.1":
+"prop-types@^15.5.4", "prop-types@^15.5.7", "prop-types@^15.6.2", "prop-types@^15.8.1":
   "integrity" "sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.8.1.tgz"
   "version" "15.8.1"
@@ -7405,7 +7405,7 @@
     "strip-ansi" "^6.0.1"
     "text-table" "^0.2.0"
 
-"react-dom@^16.13.1":
+"react-dom@^15.0.0 || ^16.0.0", "react-dom@^16.13.1":
   "integrity" "sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-16.13.1.tgz"
   "version" "16.13.1"
@@ -7495,7 +7495,20 @@
   "resolved" "https://registry.npmjs.org/react-scrollama/-/react-scrollama-2.2.8.tgz"
   "version" "2.2.8"
 
-"react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@>= 16":
+"react-song-embed@^1.0.0":
+  "integrity" "sha512-EOJBeBrOmYj83SMaSBWgXikH27pVIX9msuR1skl7rtJflsir3XkXDKMAV8QyPvqfilIYSoSBnaKtpzna0xHtgg=="
+  "resolved" "https://registry.npmjs.org/react-song-embed/-/react-song-embed-1.0.0.tgz"
+  "version" "1.0.0"
+
+"react-sound@^1.2.0":
+  "integrity" "sha512-pc2l8f7Oy3VePRRVesBwSSJ0mrCeD/lE5GVCT1RPdEQ7lgbZTDyWI8HokXHmS1v79aiLnd3WTRhfsBAY0NTb8g=="
+  "resolved" "https://registry.npmjs.org/react-sound/-/react-sound-1.2.0.tgz"
+  "version" "1.2.0"
+  dependencies:
+    "prop-types" "^15.5.7"
+    "soundmanager2" "^2.97.20170602"
+
+"react@^15.0.0 || ^16.0.0", "react@^15.3.0 || ^16.0.0-0", "react@^16.13.1", "react@^16.8.0 || ^17.0.0", "react@>= 16":
   "integrity" "sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w=="
   "resolved" "https://registry.npmjs.org/react/-/react-16.13.1.tgz"
   "version" "16.13.1"
@@ -7997,6 +8010,11 @@
   "version" "1.1.2"
   dependencies:
     "is-plain-obj" "^1.0.0"
+
+"soundmanager2@^2.97.20170602":
+  "integrity" "sha512-2ee7ES9SJ++WkD7PGHMeT4QUuJr7uC3wacD6RoCDlKjdSp9lpEOaKm3lKWKld119DLILjS2l9U6xpXJN6U0KPQ=="
+  "resolved" "https://registry.npmjs.org/soundmanager2/-/soundmanager2-2.97.20170602.tgz"
+  "version" "2.97.20170602"
 
 "source-list-map@^2.0.0", "source-list-map@^2.0.1":
   "integrity" "sha512-qnQ7gVMxGNxsiL4lEuJwe/To8UnK7fAnmbGEEH8RpLouuKbeEm0lhbQVFIrNSuB+G7tVrAlVsZgETT5nljf+Iw=="
